@@ -2,17 +2,31 @@ body {
     font-family: 'Raleway', sans-serif;
     text-align: center;
 
-    /* This rule targets the container div that wraps the image */
-.image-container {
-    max-width: 100%; /* Set the maximum width to the desired value */
-    height: auto; /* Ensures the image maintains its aspect ratio */
-    overflow: hidden; /* Hides any content that overflows the container */
+/* Style the <nav> and <ul> elements */
+nav ul {
+    list-style-type: none; /* Remove list bullet points */
+    padding: 0;
 }
 
-/* This rule targets the image inside the container */
-.image-container img {
-    width: 10%; /* Ensures the image spans the full width of the container */
-    height: auto;
+nav li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 20px; /* Add some space between items */
 }
 
+/* Style the <a> (link) elements */
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px 20px; /* Add padding to make the links bigger */
+    border: 2px solid #000; /* Add a 2px solid black border around links */
+    border-radius: 5px; /* Add rounded corners to the border */
+    color: #000; /* Set the text color */
+    background-color: #fff; /* Set the background color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+}
+
+/* Change color and background on hover */
+nav a:hover {
+    background-color: #000; /* Change the background color on hover */
+    color: #fff; /* Change the text color on hover */
+}
 }
